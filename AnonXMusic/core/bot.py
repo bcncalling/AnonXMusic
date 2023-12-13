@@ -26,7 +26,7 @@ class Anony(Client):
         self.name = self.me.first_name + " " + (self.me.last_name or "")
         self.username = self.me.username
         self.mention = self.me.mention
-        slef.first_name = BOT_NAME
+        self.first_name = BOT_NAME
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
