@@ -39,7 +39,7 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/yumikosupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", " https://t.me/+Yc04IjINcqdhN2U1")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TgBotsNetwork")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
@@ -78,7 +78,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/25efe6aa029c6baea73ea.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/3f6617a56e80ae381273c.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
