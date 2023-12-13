@@ -2,6 +2,7 @@ from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
+from config import BOT_NAME
 
 from ..logging import LOGGER
 
@@ -25,8 +26,7 @@ class Anony(Client):
         self.name = self.me.first_name + " " + (self.me.last_name or "")
         self.username = self.me.username
         self.mention = self.me.mention
-        self.first_name = self.me.first_name
-        BOT_NAME = config.BOT_NAME
+        slef.first_name = BOT_NAME
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
