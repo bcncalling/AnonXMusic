@@ -25,6 +25,7 @@ class Anony(Client):
         self.name = self.me.first_name + " " + (self.me.last_name or "")
         self.username = self.me.username
         self.mention = self.me.mention
+        self.first_name = self.me.first_name
 
         try:
             await self.send_message(
