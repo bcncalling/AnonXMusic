@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 
-from AnonXMusic import app, BOT_NAME
+from AnonXMusic import app
 from config import YOUTUBE_IMG_URL
 
 
@@ -73,7 +73,7 @@ async def get_thumb(videoid):
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 30)
-        draw.text((1120, 9), unidecode(BOT_NAME), fill="red", font=arial)
+        draw.text((1120, 9), unidecode(app.BOT_NAME), fill="red", font=arial)
         draw.text(
             (55, 560),
             f"{channel} | {views[:23]}",
